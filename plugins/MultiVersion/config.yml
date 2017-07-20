@@ -1,0 +1,15 @@
+# Plugin by scholzi100 
+# Twitter: @scholzi100
+
+
+default:
+  gameversion: 1.6.2, 1.6.3, 1.6.4
+  kickmessage: '&4Please use one of the following Versions: 1.6.2, 1.6.3, 1.6.4|+|&7Your
+    Version: <version>'
+  motd: '&4Up/Downgrade your Minecraft Clinet'
+
+
+serverlist:
+  motd: '&4MultiVersion by @scholzi100'
+  gameversion: 1.6.4, 1.6.3, 1.6.2
+

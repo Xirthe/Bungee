@@ -1,0 +1,79 @@
+# Welcome to Staff Chat Bungee.
+# Configure your cross-server channels here.
+# Formatting:
+# - All channels will format with:
+# - '[Channel] [Server] Username: message'
+# - [] can be replaced using the 'borders' setting.
+# - Each component is customized in the appropriate area.
+# Showing components:
+# - To hide a component in the display, set "show" to "false".
+# Coloring components:
+# - To leave text white, just set color to "f".
+# - To color it just set a color code (e.g. "c", "d", "e"). Do NOT include any symbols before a code. One letter only.
+# - View applicable color codes here: http://minecraft.tools/en/color-code.php
+# Commands:
+# - Commands are registered during load-time based on the values here. Firstly, there will be a command registered with
+# - the name of the channel. The name is the key, e.g. "staff:" and "admin:". The command will be /staff or /admin
+# - respectively. The command-aliases option has a list of other aliases you can also use to access the channel.
+# - The default settings provide /staff, /s, /admin, and /a.
+# Symbol triggers;
+# - These one-letter symbols allow your users to quickly send a message to a channel by prefixing the message with
+# - the symbol. E.g. "/staff hello" is the same as "!hello" if "!" is a symbol trigger for channel "staff".
+# - If you'd rather not use these, just set the symbol-triggers value to a plain set of square-brackets: []
+channels:
+  staff:
+    command-aliases: ["s"]
+    symbol-triggers: ["!"]
+    usage-permission: "staff.chat"
+    description: "Xirthe Staff Online"
+    formatting:
+      borders:
+        left: "["
+        right: "]"
+      border-color: "8"
+      use-borders: true
+      channel-component:
+        show: true
+        color: "c"
+        show-member-count-on-hover: true
+        show-description-on-hover: true
+      server-component:
+        show: true
+        color: "d"
+        show-player-count-on-hover: true
+      username-component:
+        show: true
+        color: "9"
+        show-player-statistics-on-hover: true
+      message-component:
+        show: true
+        default-color: "f"
+        allow-users-to-color-message: false
+  admin:
+    command-aliases: ["a"]
+    symbol-triggers: ["#"]
+    usage-permission: "admin.chat"
+    description: "Xirthe admin members only"
+    formatting:
+      borders:
+        left: "["
+        right: "]"
+      border-color: "8"
+      use-borders: true
+      channel-component:
+        show: true
+        color: "c"
+        show-member-count-on-hover: true
+        show-description-on-hover: true
+      server-component:
+        show: true
+        color: "d"
+        show-player-count-on-hover: true
+      username-component:
+        show: true
+        color: "f"
+        show-player-statistics-on-hover: true
+      message-component:
+        show: true
+        default-color: "f"
+        allow-users-to-color-message: false

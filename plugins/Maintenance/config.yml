@@ -1,0 +1,9 @@
+MaintenanceMode: false
+noperm: '&cYou aren''t allowed to do this. :('
+MaintenanceReason: '&cServeur en Maintenance !'
+MaintenanceMoreinfo: '&aLe site: http://t-cub.esy.es :)'
+Servername: '&9Xirthe'
+language: en
+MotDFirstline: '&9Xirthe &7| &bServeur Mini Jeux'
+MotDSecondlineMaintenance: '&cServeur en Maintenance !'
+MotDSecondlineStandart: '&aViens jouer sur nos serveur avec tes amis :) '

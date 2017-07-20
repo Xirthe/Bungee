@@ -1,0 +1,87 @@
+ip_forward: true
+custom_server_name: Xirthe | Mini Jeux
+network_compression_threshold: 256
+stats: 44dabe3c-97a8-47d7-ab24-a118642f09b2
+groups:
+  Clyux:
+  - admin
+  Blackhol12:
+  - admin
+  Parasyt:
+  - admin
+  ZenXtron:
+  - admin
+servers:
+  Lobby:
+    motd: '&1Lobby'
+    address: xirthe.serveftp.com:1
+    restricted: false
+  HungerGames:
+    motd: '&1HungerGames'
+    address: xirthe.serveftp.com:2
+    restricted: false
+  Creatif:
+    motd: '&1Creatif'
+    address: xirthe.serveftp.com:7
+    restricted: false
+  Island:
+    motd: '&1Island'
+    address: xirthe.serveftp.com:4
+    restricted: false
+  Rush:
+    motd: '&1rush'
+    address: xirthe.serveftp.com:5
+    restricted: false
+  Skywars:
+    motd: '&1skywars'
+    address: xirthe.serveftp.com:3
+    restricted: false
+  letsplay:
+    motd: '&1skywars'
+    address: xirthe.serveftp.com:1216
+    restricted: true
+timeout: 30000
+player_limit: -1
+listeners:
+- query_port: 25565
+  motd: '&1Another Bungee server'
+  priorities:
+  - lobby
+  bind_local_address: true
+  tab_list: GLOBAL_PING
+  query_enabled: false
+  host: 0.0.0.0:25565
+  forced_hosts:
+    xirthe.serveftp.com: lobby
+  max_players: 50
+  tab_size: 60
+  ping_passthrough: false
+  force_default_server: true
+permissions:
+  default:
+  - bungeecord.command.server
+  - bungeecord.command.list
+  admin:
+  - bungeecord.command.alert
+  - bungeecord.command.end
+  - bungeecord.command.send
+  - maintenance.use
+  - maintenance.join
+  - bungeecord.command.ip
+  - bungeecord.command.reload
+  - staff.chat
+  - admin.chat
+  - joinme.use
+  - clientstats.cmd.stats
+  - clientstats.cmd.version
+  - clientstats.cmd.online
+  - clientstats.cmd.player
+  - clientstats.cmd.reset
+  - clientstats.cmd.reload
+  - bungeecord.server.letsplay
+online_mode: false
+log_commands: false
+always_handle_packets: false
+connection_throttle: 4000
+disabled_commands:
+- disabledcommandhere
